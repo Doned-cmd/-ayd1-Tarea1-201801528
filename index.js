@@ -15,6 +15,10 @@ app.post('/Calculadora', (req, res) => {
   res.send({suma});
 });
 
+app.get('/info-carnet', (req, res) => {
+  res.send('201801528');
+});
+
 app.listen(port, () => {
   console.log(`Servidor escuchando en http://localhost:${port}`);
 });
